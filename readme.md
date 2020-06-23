@@ -39,7 +39,7 @@ Navigate to agentFinder > manage.py
 * Django - web Framework
 * sqlite3  Filebased Database
 
-
+## Author
 
 * **Abhishek Powar** 
 
