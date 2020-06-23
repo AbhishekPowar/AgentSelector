@@ -49,7 +49,7 @@ Navigate to agentFinder > manage.py
 
 * Why did I use sqlite?
 
-sqlite is used as a database as it will be easy to copy during evaluation as sqlite is filebased.Any other Database can be used with this Project. All we need it to setup database in setting.py. Migrate into that database
+sqlite is used as a database as it will be easy to copy during evaluation as sqlite is filebased.Any other Database can be used with this Project. All we need  to do  change database configuration in setting.py. Migrate data into new database
 
 
 
