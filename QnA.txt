@@ -1,0 +1,37 @@
+Question 1 - Have you ever worked on any networking related program (whether in python or
+any other language). Networking means working with TCP/UDP.
+Answer:
+    I have worked on some socket programs. During 3rd Year of Engineering
+
+Question 2 - Do you have any knowledge or experience with SIP (session initiation protocol).
+Again this experience does not necessarily need to be in python.
+Answer: 
+    No
+
+Question 3 - Do you have knowledge of databases (either NoSQL or SQL). Which ones?
+Answer:
+    MySQL - Built some projects (my Default database)
+    PostgresSql - Used during my experience with PrimeNumber Technologies as Python development Intern
+    FireStore - Built a project with it
+    MongoDb - Used few time  
+
+Question 4 - Have you ever worked with an ORM like sqlalchemy/mongoengine in python.
+Answer: 
+    Django has an ORM.
+    I have worked with it.
+    Used in this Project 
+
+Question 5 - Have you ever worked with any microservices/web based frameworks in python
+(like Flask/Sanic/Django).
+Answer: 
+    Django - Used during my experience with PrimeNumber Technologies as Python development Intern
+    Used in this project
+
+Question 6 - Have you ever used any concurrency framework like asyncio/gevents/twisted in
+python? If yes, which ones.
+Answer:
+    No.
+
+PS:
+I confirm that the information given above is true, complete and accurate.  
+I will learn skill/Tool that I don't have knowledge at present 
