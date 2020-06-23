@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            header,h1{
+                margin: 0;
+                padding: 0;
+                background: rgb(119, 233, 91);
+                
+            }
+            form{
+                background: rgba(120, 233, 91, 0.774);
+    
+            }
+            .inputBox{
+                padding: 10px;
+                padding-left: 40px;
+                margin: 10px;
+            }
+            label{
+                font-size: 20px;
+                font-weight: bold;
+                margin-right: 30px;
+            }
+            .container{
+                display: flex;
+                flex-basis: 100vh;
+                height: 80vh;
+            }
+            #output{
+                margin-top: 10px;
+                background: rgba(53, 216, 107, 0.219);
+                border: 2px solid rgb(9, 255, 0);
+            }
+            .box{
+                flex :1;
+                height: 80vh;
+            }
+        </style>
+           
+    </head>
+<body>
+    <header>
+        <h1>Agent Dashboard</h1>
+    </header>
+    <div class="container">
+        <div class="formDiv box">
+            <form action="AgentReg" method="get" id='agentForm'>
+                
+                <div class="inputBox">
+                    <label for="Mode">Is Available</label>
+                    <div>
+                        <input type="radio" name="available"  value="True" checked>
+                        <label for="">Yes</label>
+                        <br>
+                        <input type="radio" name="available"  value="False">
+                        <label for="">No</label>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" class="timepicker" value="09:00">
+                </div>
+                <div class="inputBox">
+                    <label for="requirement">Roles</label>
+                    <div class="roles">
+                        <br>
+                        <input type="checkbox" name="roles" id="" value="hr">
+                        <label for="">HR</label>
+                        <br>
+                        <input type="checkbox" name="roles" id="" value="sales">
+                        <label for="">Sales</label>
+                        <br>
+                        <input type="checkbox" name="roles" id="" value="management">
+                        <label for="">Management</label>
+                        <br>
+                        <input type="checkbox" name="roles" id="" value="support">
+                        <label for="">Support</label>
+                        <br>
+                        <input type="checkbox" name="roles" id="" value="technology">
+                        <label for="">Technology</label>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+        <div id="output" class="box">
+
+        </div>
+    </div>
+    <script>
+            form = document.getElementById('agentForm')
+            form.addEventListener('submit', async (e)=>{
+                e.preventDefault()
+    
+                params = '?'
+    
+                available =  Array.from(document.querySelectorAll('input[name=available]')).filter((e)=>e.checked)[0].value
+                params+=`available=${available}`
+                time = document.querySelector('#time').value
+                params+=`&&time=${time}`
+                roles = document.getElementsByName('roles')
+                vaildRoles = []
+                for (const box of roles) {
+                    if (box.checked)
+                        vaildRoles.push(box.value)
+                }
+                params+=`&&roles=${vaildRoles.join('-')}`
+                res = await fetch('AgentReg'+params)
+                json = await res.json()
+                console.log(json)
+                document.getElementById('output').innerText = JSON.stringify(json)
+            })
+        </script>
+   
+</body>
+</html>

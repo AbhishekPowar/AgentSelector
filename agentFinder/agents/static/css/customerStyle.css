@@ -1,0 +1,79 @@
+body {
+	background: rgba(0, 0, 0, 0.075);
+}
+
+label {
+	color: black;
+}
+
+header,
+h1 {
+	margin: 0;
+	padding: 0;
+	background: #4176909d;
+}
+form {
+	background: #79aec877;
+	border: 2px solid #1a262c;
+}
+.inputBox {
+	padding: 10px;
+	padding-left: 40px;
+	margin: 10px;
+}
+.formDiv {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+label {
+	font-size: 20px;
+	font-weight: bold;
+	margin-right: 30px;
+}
+/* .container {
+	display: flex;
+	flex-basis: 100vh;
+	height: 80vh;
+} */
+#output {
+	margin-top: 10px;
+	background: #79aec877;
+	border: 2px solid #1a262c;
+	/* max-height: 4; */
+	margin-bottom: 20px;
+}
+.box {
+	/* flex: 1; */
+	height: 74vh;
+}
+.Jbox {
+}
+.JboxRes {
+	background: #79aec8;
+}
+.key {
+	font-weight: bold;
+	font-size: 20px;
+	margin: 10px 0 0 10px;
+	text-transform: capitalize;
+}
+.value {
+	font-size: 18px;
+	margin: 10px 100px;
+	font-style: italic;
+}
+.btn {
+	background: #417690;
+}
+.btn:hover {
+	background: #5ea3c5;
+	color: black;
+	border: 2px solid #325769;
+	font-weight: bold;
+}
+
+.LI-profile-badge {
+	background: #79aec877;
+	margin: 10px;
+	border: 2px solid black;
+}

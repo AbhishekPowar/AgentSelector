@@ -1,0 +1,43 @@
+{%load  static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Find Agent</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+</head>
+<body>
+    <header>
+        <h1>
+            Support Genie Services
+        </h1>
+    </header>
+    <div class="card main-box"> 
+        <div class="question">
+            Choose Task
+        </div>
+        <div class="contain ">
+            <a href="/admin/agents/agents/add/"> 
+                <div class="card agent">
+                    Register Agent
+                </div>    
+            </a>
+            <a href="/customer"> 
+                <div class="card customer">
+                    Let's Find You a Agent
+                </div>
+            </a>
+            
+        </div>
+    </div>
+    <div class="LI-profile-badge col l12 m12 s12"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="abhishek-powar"><a class="LI-simple-link" href='https://in.linkedin.com/in/abhishek-powar?trk=profile-badge'>Abhishek Powar</a></div>
+
+</body>
+</html>
